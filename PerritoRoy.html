@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colitas Felices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Menú de opciones -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="src/img/perritos/Logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="adopta.html">Adopta</a>
+                <a href="dudas.html">Dudas</a>
+                <a href="dona.html">Dona</a>
+                <a href="contacto.html">Contacto</a>
+
+                <!-- Submenú desplegable -->
+                <div class="submenu">
+                    <a href="#">Mi Cuenta ▾</a>
+                    <div class="submenu-opciones">
+                        <a href="iniciarSecion.html">Iniciar Sesión</a>
+                        <a href="registrate.html">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Sección Historia de Roy -->
+    <main class="historia-perrito">
+        <h1>🐾 La historia de Roy</h1>
+
+        <h3>📍 ¿Dónde lo encontraron?</h3>
+        <p>Roy fue encontrado cerca del <strong>Parque Industrial</strong> de Trujillo. Vagaba entre talleres y
+            depósitos, buscando sombra y agua. Su energía destacaba entre el ambiente gris del lugar, y varios
+            trabajadores nos alertaron sobre su presencia constante.</p>
+
+        <h3>💔 ¿Cómo era su vida antes?</h3>
+        <p>Parece que Roy vivió mucho tiempo en la calle. Aunque estaba fuerte, su pelaje mostraba señales de
+            descuido y tenía heridas en las patas de tanto caminar. Dormía entre cajas y materiales apilados. A
+            pesar de su pasado duro, siempre movía la cola cuando alguien se le acercaba.</p>
+
+        <h3>🎾 ¿Qué le gusta hacer?</h3>
+        <p>Roy es pura energía. Le encanta correr, saltar y jugar con pelotas o ramas. Disfruta especialmente los
+            paseos largos por las avenidas de Trujillo y los campos abiertos. También adora que le rasquen la
+            barriga después de un día de juegos.</p>
+
+        <h3>👶 ¿Cómo se comporta con personas o niños?</h3>
+        <p>Es muy cariñoso y juguetón con las personas. Se emociona mucho cuando hay visitas y suele ser muy
+            efusivo. Con los niños es paciente, pero por su tamaño y energía es mejor que conviva con niños mayores
+            que puedan acompañar su ritmo.</p>
+
+        <h3>🏡 ¿Qué tipo de hogar sería ideal para él?</h3>
+        <p>Roy necesita un hogar activo, con personas que disfruten de actividades al aire libre. Una casa con patio
+            o jardín donde pueda correr sería ideal. Perfecto para una familia que busque un compañero fiel,
+            enérgico y siempre listo para la aventura.</p>
+    </main>
+
+    <!-- Botón Adoptar -->
+    <div class="boton-adoptar-container">
+        <button id="abrirFormulario" class="boton-adoptar">🐶 Adoptar</button>
+    </div>
+    <script src="main.js"></script>
+    <!-- Modal del Formulario -->
+    <div id="modalFormulario" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Formulario de Adopción</h2>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="mensaje">¿Por qué quieres adoptar a Roy?</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit" class="enviar-btn">Enviar solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <h2>Colitas<span>Felices</span></h2>
+            </div>
+            <div class="footer-links">
+                <a href="contacto.html">Contacto</a>
+                <a href="AvisoLegal.html">Aviso Legal</a>
+                <a href="PoliticaPrivacidad.html">Política de Privacidad</a>
+                <a href="PoliticaCookies.html">Política de Cookies</a>
+                <a href="contacto.html">Canal de Denuncias</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram" /></a>
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook" /></a>
+                <a href="https://www.youtube.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube" /></a>
+                <a href="https://tiktok.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png" alt="TikTok" /></a>
+            </div>
+            <div class="footer-contacto">
+                <p><strong>(044) 456-7890</strong></p>
+                <p>Calle Amor Animal #123, Ciudad Trujillo</p>
+                <p>
+                    <a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Web creada por <strong>Ariana Fernandez,David García,Diego Cabanillas y Paula Rodríguez </strong></p>
+        </div>
+    </footer>
+</body>
+
+</html>

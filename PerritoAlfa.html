@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colitas Felices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Menú de opciones -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="src/img/perritos/Logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="adopta.html">Adopta</a>
+                <a href="dudas.html">Dudas</a>
+                <a href="dona.html">Dona</a>
+                <a href="contacto.html">Contacto</a>
+
+                <!-- Submenú desplegable -->
+                <div class="submenu">
+                    <a href="#">Mi Cuenta ▾</a>
+                    <div class="submenu-opciones">
+                        <a href="iniciarSecion.html">Iniciar Sesión</a>
+                        <a href="registrate.html">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Sección Historia de Alfa -->
+    <main class="historia-perrito">
+        <h1>🐾 La historia de Alfa</h1>
+
+        <h3>📍 ¿Dónde la encontraron?</h3>
+        <p>Alfa fue encontrada en una zona rural de <strong>Poroto</strong>, a las afueras de Trujillo. Estaba cerca de
+            una chacra, desorientada y buscando comida entre las plantas de maíz.</p>
+
+        <h3>💔 ¿Cómo era su vida antes?</h3>
+        <p>Se cree que Alfa fue abandonada por alguna familia que se mudó. Pasaba sus días sola, soportando el calor y
+            durmiendo bajo árboles. Algunas personas del lugar le daban sobras, pero no tenía atención veterinaria ni
+            refugio.</p>
+
+        <h3>🎾 ¿Qué le gusta hacer?</h3>
+        <p>Es muy juguetona y activa. Le encanta correr detrás de pelotas, cavar hoyitos en la tierra y jugar con otros
+            perritos. Disfruta mucho los paseos por zonas abiertas como el <strong>campo de Simbal</strong>.</p>
+
+        <h3>👶 ¿Cómo se comporta con personas o niños?</h3>
+        <p>Alfa es muy sociable y obediente. Tiene mucha energía, por lo que se lleva excelente con niños y adultos
+            activos. Le encanta estar rodeada de gente y dar besitos.</p>
+
+        <h3>🏡 ¿Qué tipo de hogar sería ideal para ella?</h3>
+        <p>Alfa necesita un hogar donde pueda correr y liberar energía. Lo ideal sería una familia con un patio amplio o
+            que pueda sacarla a pasear con frecuencia. Es perfecta para personas que disfrutan de actividades al aire
+            libre y desean una compañera fiel.</p>
+    </main>
+
+    <!-- Botón Adoptar -->
+    <div class="boton-adoptar-container">
+        <button id="abrirFormulario" class="boton-adoptar">🐶 Adoptar</button>
+    </div>
+    <script src="main.js"></script>
+    <!-- Modal del Formulario -->
+    <div id="modalFormulario" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Formulario de Adopción</h2>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="mensaje">¿Por qué quieres adoptar a Alfa?</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit" class="enviar-btn">Enviar solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <h2>Colitas<span>Felices</span></h2>
+            </div>
+            <div class="footer-links">
+                <a href="contacto.html">Contacto</a>
+                <a href="AvisoLegal.html">Aviso Legal</a>
+                <a href="PoliticaPrivacidad.html">Política de Privacidad</a>
+                <a href="PoliticaCookies.html">Política de Cookies</a>
+                <a href="contacto.html">Canal de Denuncias</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram" /></a>
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook" /></a>
+                <a href="https://www.youtube.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube" /></a>
+                <a href="https://tiktok.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png" alt="TikTok" /></a>
+            </div>
+            <div class="footer-contacto">
+                <p><strong>(044) 456-7890</strong></p>
+                <p>Calle Amor Animal #123, Ciudad Trujillo</p>
+                <p>
+                    <a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Web creada por <strong>Ariana Fernandez,David García,Diego Cabanillas y Paula Rodríguez </strong></p>
+        </div>
+    </footer>
+</body>
+
+</html>
